@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap");
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+.container {
+  padding: 2em 1em;
+}
+
+header .header-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 60% 20%;
+      grid-template-columns: 20% 60% 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3em 1em;
+  text-align: center;
+}
+
+header .logo {
+  background: black;
+  color: #fff;
+  font-weight: bold;
+  font-style: italic;
+  display: block;
+  width: 130px;
+  padding: 0.3em 0.7em;
+  margin: 0 auto;
+}
+
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  cursor: pointer;
+}
+
+header .header-menu-right {
+  text-align: right;
+}
+
+header .header-menu-right .search-icon {
+  margin: 0 0.5em 0 0;
+}
+
+header .header-menu-right .search-icon img {
+  margin-bottom: -0.1em;
+}
+
+header .header-menu-right a {
+  position: relative;
+  z-index: 6;
+}
+
+header .header-menu-right img {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header .header-menu-right img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+section.promo-area .promo-container {
+  padding-bottom: 3em;
+}
+
+section.promo-area .promo-right {
+  overflow-x: hidden;
+}
+
+section.promo-area .promo-right img:nth-child(1) {
+  width: 90%;
+  margin-left: -22%;
+  margin-top: -22%;
+  -webkit-transform: rotate(-9deg);
+          transform: rotate(-9deg);
+}
+
+section.promo-area .promo-right img:nth-child(2) {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+  width: 117%;
+  margin-left: 10%;
+  margin-top: -80%;
+}
+
+section.promo-area .promo-left {
+  text-align: center;
+  margin-top: -3.5em;
+}
+
+section.promo-area .promo-left h1 {
+  font-size: 65px;
+  font-weight: bold;
+  letter-spacing: -3px;
+  line-height: 1;
+  margin: 0;
+}
+
+section.promo-area .promo-left p {
+  font-weight: 500;
+  font-size: 1.1em;
+  margin: 2em 0;
+}
+
+section.promo-area .promo-left .shop-ctn {
+  display: inline-block;
+  color: #fff;
+  background-color: black;
+  padding: 0.8em 4.5em;
+  font-size: 1.1em;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+section.promo-area .promo-left .shop-ctn:hover {
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+}
+
+section.categories .women,
+section.categories .men {
+  background: black;
+  color: #fff;
+  padding: 1em;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+section.categories .women::before,
+section.categories .men::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+section.categories .women h2,
+section.categories .men h2 {
+  position: absolute;
+  top: 0;
+  left: 1;
+  width: 100%;
+  height: 16%;
+  font-size: 2.4em;
+  margin: 0.7em 0 0;
+}
+
+section.categories .women .shop-now,
+section.categories .men .shop-now {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  margin-top: -2.3em;
+}
+
+section.categories .women .shop-now a,
+section.categories .men .shop-now a {
+  color: #fff;
+  font-size: 1.1em;
+}
+
+section.categories .women .shop-now img,
+section.categories .men .shop-now img {
+  margin: 0em 0 -0.1em 0.3em;
+}
+
+section.products h3 {
+  position: relative;
+  font-weight: 800;
+  font-size: 2em;
+}
+
+section.products h3::before {
+  content: '';
+  background-color: #e1e1e1;
+  width: 100%;
+  height: 6px;
+  position: absolute;
+  left: 0;
+  top: 13em;
+}
+
+section.products h3::after {
+  content: '';
+  background-color: black;
+  width: 20%;
+  height: 6px;
+  position: absolute;
+  left: 0;
+  top: 13em;
+}
+
+section.products .new-releases,
+section.products .top-kicks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: first baseline;
+      -ms-flex-pack: first baseline;
+          justify-content: first baseline;
+}
+
+section.products .new-releases .product,
+section.products .top-kicks .product {
+  margin-right: 1em;
+}
+
+section.products .new-releases .product img,
+section.products .top-kicks .product img {
+  width: 240px;
+  height: 240px;
+}
+
+section.products .new-releases .product .name,
+section.products .top-kicks .product .name {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+section.products .new-releases .product .price,
+section.products .top-kicks .product .price {
+  margin: 0;
+}
+
+section.products .top-kicks-wrapper {
+  margin-top: 5em;
+}
+
+section.products .products-scroll {
+  overflow-x: auto;
+}
+
+section.products .products-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+section.mailing {
+  text-align: center;
+}
+
+section.mailing .container {
+  padding: 8em 3em;
+}
+
+section.mailing h2 {
+  font-weight: 800;
+  font-size: 43px;
+  line-height: 1;
+  margin: 0;
+}
+
+section.mailing p {
+  font-weight: 500;
+  margin: 1.2em 0;
+}
+
+section.mailing .mail-ctn {
+  display: inline-block;
+  color: black;
+  background-color: transparent;
+  padding: 0.8em 1.4em;
+  font-size: 1.1em;
+  font-weight: 500;
+  border: 2px solid black;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+section.mailing .mail-ctn:hover {
+  color: #fff;
+  background-color: black;
+}
+
+footer {
+  background: black;
+  color: #fff;
+}
+
+footer .footer-container {
+  padding: 3em 1em 2em;
+}
+
+footer p {
+  color: #c4c4c4;
+  opacity: 50%;
+  font-size: 0.9em;
+}
+
+footer .footer-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+footer .footer-list ul li a {
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 0.4em;
+  font-size: 0.8em;
+  -webkit-transition: color 0.3em;
+  transition: color 0.3em;
+}
+
+footer .footer-list ul li a:hover {
+  color: #c4c4c4;
+  opacity: 50%;
+}
+
+footer .sns-wrapper a {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+footer .footer-all-rights {
+  font-size: 0.7em;
+  margin: 3em 0 0;
+}
+
+nav {
+  position: fixed;
+  background: black;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 0;
+  overflow-x: hidden;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 7;
+  text-align: left;
+}
+
+nav .nav-wrapper {
+  padding: 3em 1em;
+}
+
+nav .mobile-menu-lists {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% auto;
+      grid-template-columns: 60% auto;
+}
+
+nav .mobile-menu-lists ul li {
+  margin-bottom: 10px;
+}
+
+nav .mobile-menu-lists ul li a {
+  display: inline-block;
+  line-height: 34px;
+  color: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+nav .mobile-menu-lists ul li a:hover {
+  text-decoration: underline;
+}
+
+nav .close-menu {
+  margin-bottom: 2em;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1024px) {
+  .hide-desktop {
+    display: none;
+  }
+  .container {
+    padding: 2em 4em;
+  }
+  header nav {
+    position: inherit;
+    background: none;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  header nav .nav-wrapper {
+    padding: 0;
+  }
+  header nav .mobile-menu-lists {
+    display: block;
+  }
+  header nav .mobile-menu-lists ul li {
+    margin-bottom: 0;
+    margin-right: 1em;
+  }
+  header nav .mobile-menu-lists ul li a {
+    display: inline-block;
+    line-height: unset;
+    color: black;
+    font-weight: 500;
+  }
+  header nav .mobile-menu-lists ul li a:hover {
+    text-decoration: underline;
+  }
+  header nav .mobile-menu-lists ul:nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: first baseline;
+        -ms-flex-pack: first baseline;
+            justify-content: first baseline;
+  }
+  header nav .close-menu {
+    margin-bottom: 0;
+  }
+  header .header-container {
+    -ms-grid-columns: 35% 30% 35%;
+        grid-template-columns: 35% 30% 35%;
+    padding: 3em 4em;
+  }
+  header .logo {
+    width: 170px;
+    font-size: 1.4em;
+  }
+  header .header-menu-right .search-icon {
+    margin-right: 1em;
+  }
+  header .header-menu-right img {
+    width: 28px;
+  }
+  section.promo-area .promo-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
+    padding: 0;
+  }
+  section.promo-area .promo-container .promo-left {
+    text-align: left;
+    width: 51%;
+    margin: 0;
+    padding-left: 4em;
+    margin-top: 9em;
+  }
+  section.promo-area .promo-container .promo-left p {
+    margin: 1em 0;
+  }
+  section.promo-area .promo-container .promo-right {
+    overflow: visible;
+  }
+  section.promo-area .promo-container .promo-right img:nth-child(1) {
+    -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+    width: 55%;
+    margin-left: 44%;
+    margin-top: -14%;
+  }
+  section.promo-area .promo-container img:nth-child(2) {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+    width: 69%;
+    margin-left: 10%;
+    margin-top: -43%;
+  }
+  section.categories .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  section.categories .women,
+  section.categories .men {
+    margin: 0 0.5em 1em 0.5em;
+  }
+  section.mailing .container {
+    padding: 8em 25em;
+  }
+  footer .footer-container {
+    padding: 5em 4em 2em;
+  }
+  footer .footer-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: first baseline;
+        -ms-flex-pack: first baseline;
+            justify-content: first baseline;
+  }
+  footer .footer-list ul {
+    margin-right: 5em;
+    margin-top: 0;
+  }
+  footer .footer-for-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer-all-rights {
+    margin-top: 6em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
